@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: staging
+    database: flood-monitoring-project
+    schema: floodmonitoring
+    tables:
+      - name: floodsdata
+      - name: floodsdata_partitioned
