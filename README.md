@@ -9,4 +9,5 @@ The key goals of the dashboard are to:
 - Examine the temporal patterns of flood events, including seasonal or annual trends, and identify any significant spikes in activity that require further investigation.
 - Evaluate the operational efficiency of the flood event management and communication processes, identify areas for improvement, and provide real-time decision support for event response.
 
-
+# Architecture
+![Workflow](https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/Floodmonitoring.drawio.png)
