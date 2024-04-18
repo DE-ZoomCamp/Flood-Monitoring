@@ -1,0 +1,16 @@
+version: '3'
+services:
+  flood:
+    image: mageai/mageai:latest
+    command: mage start ${PROJECT_NAME}
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 6789:6789
+    volumes:
+      - .:/home/src/
+      - /home/kreezy/Documents/Flood Monitoring/orchestration_Mage/keys/keys.json:/home/src/keys.json
+    restart: on-failure:5

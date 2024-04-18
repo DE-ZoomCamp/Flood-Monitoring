@@ -1,0 +1,26 @@
+blocks: []
+cache_block_output_in_memory: false
+callbacks: []
+concurrency_config: {}
+conditionals: []
+created_at: '2024-04-16 21:26:41.952842+00:00'
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: realtime_Floods
+notification_config: {}
+remote_variables_dir: null
+retry_config: {}
+run_pipeline_in_one_process: false
+settings:
+  triggers: null
+spark_config: {}
+tags: []
+type: python
+updated_at: '2024-04-16T21:37:34+00:00'
+uuid: realtime_floods
+variables_dir: /home/src/mage_data/flood-monitoring
+widgets: []
