@@ -9,7 +9,8 @@ The key goals of the dashboard are to:
 - Analyze the flood severity and severity levels
 - Check most types of floods istidal True or false
 - Develop a dashboard of this.
-  
+
+The project has a Batch Pipeline that runs @daily 2000hrs.
 
 # Architecture
 ![Workflow](https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/Floodmonitoring.drawio.png)
