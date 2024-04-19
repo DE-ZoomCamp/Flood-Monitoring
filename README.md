@@ -49,6 +49,16 @@ git clone https://github.com/DE-ZoomCamp/Flood-Monitoring.git
 
 - Visualization: Metabase Local
 
+# Data Ingestion -Mage AI -Workflow orchestration
+
+Created the data extration script(Data loader) from the flood monitoring api in Mage.
+Code found here:(https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/orchestration_Mage/flood-monitoring/data_loaders/extract_py.py)
+
+Loaded/Exported the data to google cloud storage(GCS) after creating a mapping between dataloader and data exporter.
+
+Code found here:(https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/orchestration_Mage/flood-monitoring/data_exporters/insert_to_gcs.py)
+
+
 ## Dashboard answering the above questions/objectives
 
 Link to the dashboaard: http://localhost:3000/public/dashboard/7b0551b1-230a-4a68-9c67-30083e1cc5ea
