@@ -101,9 +101,13 @@ dbt build
 I used metabase using docker by running this command.
 
 `
+
  sudo docker run -d -p 3000:3000 --name metabase metabase/metabase
 
 `
+
+#### Process of setting up Metabase:
+
 - Launched the metabase via localhost:3000
 
 - configured database as Biqquery with the keys-json and used both.
