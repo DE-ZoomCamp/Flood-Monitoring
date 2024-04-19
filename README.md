@@ -52,11 +52,12 @@ git clone https://github.com/DE-ZoomCamp/Flood-Monitoring.git
 # Data Ingestion -Mage AI -Workflow orchestration
 
 Created the data extration script(Data loader) from the flood monitoring api in Mage.
+
 Code found here:[Link](https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/orchestration_Mage/flood-monitoring/data_loaders/extract_py.py)
 
 Loaded/Exported the data to google cloud storage(GCS) after creating a mapping between dataloader and data exporter.
 
-Code found here:[Link] (https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/orchestration_Mage/flood-monitoring/data_exporters/insert_to_gcs.py)
+Code found here:[Link](https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/orchestration_Mage/flood-monitoring/data_exporters/insert_to_gcs.py)
 
 #  Pipeline for moving the data from the lake to a data warehouse - BIGQUERY
 
@@ -64,18 +65,18 @@ I used SQL scripts to load data to bigquery.
 Script here: [Link](https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/pipelineMovementGcs_Bigquery/load_gcs_bigquery.sql)
 
 Partitioned data based on the dataRaised of the flood alerts clustering by areaName.
-script here:[Link] (https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/pipelineMovementGcs_Bigquery/partition.sql)
+script here:[Link](https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/pipelineMovementGcs_Bigquery/partition.sql)
 
 ## Transforming the data in the data warehouse - Used DBT
 After configuration.
 
 dbt_project.yml configured the name of the project
 
-script here:[Link] (https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/transformation_DBT/floodmonitoring/dbt_project.yml)
+script here:[Link](https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/transformation_DBT/floodmonitoring/dbt_project.yml)
 
 Created a staging area , created schema.yml and defined the dataset in BigQuery, schema and also the tables associated with it.
 
-Script here: [Link] (https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/transformation_DBT/floodmonitoring/models/staging/schema.yml)
+Script here: [Link](https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/transformation_DBT/floodmonitoring/models/staging/schema.yml)
 
 Generate the sql:
 
