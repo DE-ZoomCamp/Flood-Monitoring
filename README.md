@@ -11,3 +11,12 @@ The key goals of the dashboard are to:
 
 # Architecture
 ![Workflow](https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/Floodmonitoring.drawio.png)
+
+# Cloning the Project
+
+To clone this repository use this command.
+
+`
+git clone https://github.com/DE-ZoomCamp/Flood-Monitoring.git
+`
+
