@@ -101,9 +101,7 @@ dbt build
 I used metabase using docker by running this command.
 
 `
-
  sudo docker run -d -p 3000:3000 --name metabase metabase/metabase
-
 `
 
 #### Process of setting up Metabase:
