@@ -42,6 +42,9 @@ git clone https://github.com/DE-ZoomCamp/Flood-Monitoring.git
 
 Link to the dashboaard: http://localhost:3000/public/dashboard/7b0551b1-230a-4a68-9c67-30083e1cc5ea
 
+or ![Link](http://localhost:3000/public/dashboard/7b0551b1-230a-4a68-9c67-30083e1cc5ea)
+
+
 ![image](https://github.com/DE-ZoomCamp/Flood-Monitoring/assets/55980747/8ec36ce3-ebb0-4231-92e6-a73ddff6c023)
 
 ![image](https://github.com/DE-ZoomCamp/Flood-Monitoring/assets/55980747/de062f85-2891-4eba-8673-3fbaeb4df599)
