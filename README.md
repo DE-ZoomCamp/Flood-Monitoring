@@ -58,6 +58,38 @@ Loaded/Exported the data to google cloud storage(GCS) after creating a mapping b
 
 Code found here:(https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/orchestration_Mage/flood-monitoring/data_exporters/insert_to_gcs.py)
 
+#  Pipeline for moving the data from the lake to a data warehouse - BIGQUERY
+
+I used SQL scripts to load data to bigquery.
+Script here: https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/pipelineMovementGcs_Bigquery/load_gcs_bigquery.sql
+
+Partitioned data based on the dataRaised of the flood alerts clustering by areaName.
+script here: https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/pipelineMovementGcs_Bigquery/partition.sql
+
+## Transforming the data in the data warehouse - Used DBT
+After configuration.
+
+dbt_project.yml configured the name of the project
+
+script here: https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/transformation_DBT/floodmonitoring/dbt_project.yml
+
+Created a staging area , created schema.yml and defined the dataset in BigQuery, schema and also the tables associated with it.
+
+Script here: https://github.com/DE-ZoomCamp/Flood-Monitoring/blob/master/transformation_DBT/floodmonitoring/models/staging/schema.yml
+
+Generate the sql:
+
+Scripts here: https://github.com/DE-ZoomCamp/Flood-Monitoring/tree/master/transformation_DBT/floodmonitoring/models/staging
+
+
+Runs in dbt cloud:
+`
+dbt deps
+`
+also
+`
+dbt build
+`
 
 ## Dashboard answering the above questions/objectives
 
