@@ -118,9 +118,8 @@ I used metabase using docker by running this command.
 
 Please use this link to access the dasboard publicly:
 
-- Link to the dashboaard: http:public/dashboard/7b0551b1-230a-4a68-9c67-30083e1cc5ea
-
-- or [Link](http:public/dashboard/7b0551b1-230a-4a68-9c67-30083e1cc5ea)
+- Link to the dashboaard: 
+- or [Link])
 
 Dasboard Overview
 
